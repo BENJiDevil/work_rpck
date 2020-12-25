@@ -1,0 +1,188 @@
+@import "../_parts/hamburger"                                    // settings
+.header
+  position: relative
+  z-index: 1
+  &__top
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    padding: 15px 0 22px
+    position: relative
+    &__logo
+      position: relative
+      left: -10px
+      padding-right: 8px
+      a
+        display: block
+        img
+          display: block
+          margin: 0
+          width: auto
+          max-width: 100%
+    &__info
+      font-family: InterMedium, sans-serif
+      color: #B2B4B7
+      font-size: 20px
+      a
+        color: #B2B4B7
+        transition: color .3s
+        &:hover
+          color: $accent-color
+      .phone-link
+        padding-left: 32px
+        position: relative
+        display: inline-block
+        margin-bottom: 14px
+        &:before
+          content: ''
+          display: block
+          width: 16px
+          height: 16px
+          position: absolute
+          left: 0
+          top: calc(50% - 8px)
+          background-image: url(../images/sprites/sprite.svg#phone_icon)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: contain
+      .time
+        position: relative
+        padding-left: 32px
+        &:before
+          content: ''
+          display: block
+          width: 20px
+          height: 20px
+          position: absolute
+          left: -2px
+          top: calc(50% - 10px)
+          background-image: url(../images/sprites/sprite.svg#time_icon)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: contain
+    &__backcall
+      .write-link
+        font-family: InterBold, sans-serif
+        display: inline-block
+        color: $blue-color
+        border-bottom: 1px solid $blue-color
+        &:hover
+          border-bottom: 1px solid transparent
+
+      .backcall-link
+        text-transform: uppercase
+        color: #fff
+        text-align: center
+        display: inline-block
+        font-family: InterSemiBold, sans-serif
+        font-size: 14px
+        line-height: 14px
+        background: linear-gradient(85.29deg, #1568C4 -79.21%, #2DB3DE 115.85%), #00669C;
+        border-radius: 10px
+        padding: 18px 25px
+        margin: 0 8px 0 3.2rem
+        &:hover
+          background: linear-gradient(85.29deg, #2DB3DE -79.21%, #1568C4 115.85%), #00669C;
+
+  &__search
+    padding: 18px 0 20px
+    position: relative
+    border-top: 1px solid #E3E3E3
+    border-bottom: 1px solid #E3E3E3
+    form
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: flex-start
+      flex-wrap: nowrap
+      width: auto
+      flex-basis: auto
+      background-color: #fff
+      border-radius: 50px
+      overflow: hidden
+      border: 1px solid #B2B4B7
+      max-width: 716px
+      padding: 0 20px
+      .search-input
+        border: none
+        flex-basis: auto
+        width: 90%
+        padding: 8px 0px
+      .search-btn
+        flex-basis: 40px
+        width: 40px
+        min-width: 40px
+        height: 40px
+        margin-left: auto
+        margin-right: 0
+        background-color: transparent
+        border: none
+        background-image: url(../images/sprites/sprite.svg#search_icon)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 12px
+
+  &__menu
+    position: relative
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1)
+    .main-menu
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: flex-start
+      flex-wrap: wrap
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+      &__item
+        flex-basis: auto
+        width: auto
+        margin-left: 4.55%
+        padding: 18px 0 20px
+        &:nth-of-type(1)
+          margin-left: 0
+        &.active
+          .main-menu__link
+            color: $accent-color
+        &.submenu-link
+          position: relative
+          .submenu
+            display: none
+            padding: 35px
+            position: absolute
+            top: 100%
+            left: -35px
+            background-color: #fff
+            border-radius: 0 0 10px 10px
+            width: 100%
+            min-width: 435px
+            z-index: -1
+            &__item
+              margin-bottom: 14px
+            &__link
+              color: #939393
+              font-size: 20px
+              line-height: 24px
+              display: inline-block
+              transition: color .3s
+              &:hover
+                color: $accent-color
+
+
+      &__link
+        display: inline-block
+        color: #181818
+        font-family: InterMedium, sans-serif
+        font-size: 20px
+        line-height: 24px
+        transition: color .3s
+        &:hover
+          color: $blue-color
+
+
+

@@ -1,0 +1,174 @@
+@import "../../libs/jquery.form-styler/dist/jquery.formstyler"
+
+/* checkbox */
+$fs-check-size: 16px                                                          // checkbox size
+$fs-check-bg: #fff                                  // checkbox bg
+$fs-check-border: 1px solid #C3C3C3                                           // checkbox border color
+$fs-check-radius: 0                                                           // checkbox border radius
+/* checked */
+$fs-check-ch-color: #000
+/* radio */
+$fs-radio-size: 16px                                                          // radio size
+$fs-radio-bg: #fff                                  // radio bg
+$fs-radio-border: 1px solid #C3C3C3                                           // radio border color
+$fs-radio-radius: 50%                                                         // radio border radius
+/* checked */
+$fs-radio-ch-size: 10px                                                       // radio check size
+$fs-radio-ch-color: #000                                                      // radio check color
+/* file */
+$fs-file-border: 1px solid #C3C3C3                                            // file border
+$fs-file-bg: #fff                                                             // file bg
+$fs-file-browse-bg: #eee                                                      // file browse btn bg
+$fs-file-browse-color: #333                                                   // file browse btn color
+/* select */
+$fs-select-border: 1px solid #C3C3C3                                          // select border
+$fs-select-bg: #fff                                                           // select bg
+$fs-select-bg-hover: #fff                        // select bg hover
+$fs-select-item: #A3ABB1                                                      // select item bg
+$fs-select-item-hover: #08C                                                   // select item hover bg
+
+
+/* checkbox */
+.jq-checkbox
+  width: $fs-check-size
+  height: $fs-check-size
+  margin: 0 8px 0px 0
+  border: $fs-check-border
+  background: $fs-check-bg
+  border-radius: $fs-check-radius
+  cursor: pointer
+  top: 1px
+  .jq-checkbox__div
+    transition: opacity .3s
+    opacity: 0
+  &.disabled
+    opacity: .55
+  &.checked
+    .jq-checkbox__div
+      width: 10px;
+      height: 6px;
+      margin: 3px 0 0 2px;
+      border-bottom: 2px solid $fs-check-ch-color
+      border-left: 2px solid $fs-check-ch-color
+      -webkit-transform: rotate(-50deg)
+      transform: rotate(-50deg)
+      opacity: 1
+/* radio */
+.jq-radio
+  width: $fs-radio-size
+  height: $fs-radio-size
+  margin: 0 5px 0px 0
+  border: $fs-radio-border
+  background: $fs-radio-bg
+  border-radius: $fs-radio-radius
+  cursor: pointer
+  top: 1px
+  .jq-radio__div
+    transition: opacity .3s
+    opacity: 0
+  &.disabled
+    opacity: .55
+  &.checked
+    .jq-radio__div
+      width: $fs-radio-ch-size
+      height: $fs-radio-ch-size
+      margin: (($fs-radio-size - $fs-radio-ch-size)/2 - 1) 0 0 (($fs-radio-size - $fs-radio-ch-size)/2 - 1)
+      border-radius: 50%
+      background: $fs-radio-ch-color
+      opacity: 1
+/* file */
+.jq-file
+  display: inline-flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  flex-wrap: nowrap
+  width: 100%
+  flex-basis: 100%
+  border-radius: $input-border-radius
+  max-width: 100%
+  input
+    cursor: pointer
+  &__name
+    box-sizing: border-box
+    width: 100%
+    padding: 5px 90px 5px 10px
+    border: $fs-file-border
+    border-radius: $input-border-radius
+    text-overflow: ellipsis
+    background: $fs-file-bg
+  &__browse
+    position: absolute
+    top: 1px
+    right: 1px
+    padding: 5px 10px
+    border-left: $fs-file-border
+    border-radius: 0 $input-border-radius $input-border-radius 0
+    background: $fs-file-browse-bg
+    color: $fs-file-browse-color
+  &.disabled
+    opacity: .55
+
+/* select */
+.jq-selectbox
+  vertical-align: middle
+  cursor: pointer
+  width: 100%
+  &__select
+    padding: 5px 35px 5px 10px
+    border: $fs-select-border
+    border-radius: $input-border-radius
+    background: $fs-select-bg
+    &:hover
+      background: $fs-select-bg-hover
+  &.disabled .jq-selectbox__select
+    opacity: .55
+  &__select-text
+    display: block
+    width: 100%
+  &__trigger
+    position: absolute
+    top: 0
+    right: 0
+    width: 35px
+    height: 100%
+
+  &__trigger-arrow
+    position: absolute
+    top: 14px
+    right: 12px
+    width: 0
+    height: 0
+    border-top: 5px solid #000
+    border-right: 5px solid transparent
+    border-left: 5px solid transparent
+  &__dropdown
+    box-sizing: border-box
+    width: 100%
+    margin: 2px 0 0
+    padding: 0
+    top: 100% !important
+  ul
+    margin: 0
+    padding: 0
+    border: $fs-select-border
+    border-radius: $input-border-radius
+    background: #FFF
+  li
+    padding: 5px 10px 6px
+    color: #000
+    border-bottom: $fs-select-border
+    &:last-child
+      border-bottom: none
+    &.selected
+      background-color: $fs-select-item
+      color: #FFF
+    &:hover
+      background-color: $fs-select-item-hover
+      color: #FFF
+    &.disabled
+      color: #AAA
+      &:hover
+        background: none
+    &.option
+      padding-left: 25px

@@ -1,0 +1,2156 @@
+@import "_mixins/styles-mixin"                                          // mixins
+@import "_parts/settings"                                               // settings
+@import "_parts/ui"                                                     // ui
+/* main */
+.why
+  padding: 1rem 0
+  position: relative
+  z-index: 1
+  &__content
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: flex-start
+    flex-wrap: wrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    margin-top: 2.75rem
+    &__item
+      flex-basis: calc(33.3% - 13px)
+      max-width: calc(33.3% - 13px)
+      width: 100%
+      border: 1px solid #D7D9DD
+      border-radius: 30px 10px
+      padding: 55px 40px 45px 40px
+      margin-right: 20px
+      &:nth-of-type(3n)
+        margin-right: 0
+      .title-block
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: flex-start
+        flex-wrap: nowrap
+        .why-title
+          margin-left: 25px
+          color: $main-color
+          font-family: InterMedium, sans-serif
+          font-size: 18px
+          line-height: 22px
+          display: inline-block
+          max-width: 220px
+      .descr-block
+        margin-top: 2.25rem
+
+.clients
+  margin: 4rem 0
+  &__content
+    margin-top: 3.7rem
+    .clients-slider
+      .owl-dots
+        margin: 3rem 0 0
+      .owl-nav
+        left: -22px
+        top: calc(50% - 38px)
+        width: calc(100% + 44px)
+        max-width: calc(100% + 44px)
+        flex-basis: calc(100% + 44px)
+        button
+          width: 48px
+          height: 48px
+        span
+          background-color: #fff
+          width: 48px
+          height: 48px
+          border-radius: 50%
+          box-shadow: 0px 13px 43px rgba(0, 0, 0, 0.16)
+          background-image: url(../images/sprites/sprite.svg#sarrow_icon)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: 20px
+          display: block
+        .info-btn-prev
+          transform: scale(-1,1)
+      .slide-item
+        display: flex
+        flex-direction: row
+        align-items: stretch
+        justify-content: center
+        flex-wrap: wrap
+        width: 100%
+        max-width: 100%
+        flex-basis: 100%
+        .client-item
+          flex-basis: 244px
+          max-width: 244px
+          width: 100%
+          margin: 0 2.3% 1.5rem
+          display: flex
+          flex-direction: row
+          align-items: center
+          justify-content: center
+          flex-wrap: wrap
+          img
+            width: auto
+            margin: 0 auto
+      .owl-dots
+        margin: 15px 0
+
+.write
+  background-image: url(../images/write_bg.jpg)
+  background-repeat: no-repeat
+  background-position: left center
+  background-size: auto 100%;
+  background-color: #F1F1F1
+  &__title
+    color: #fff
+  &__subtitle
+    color: #fff
+    margin-top: 14px
+    font-weight: normal
+    font-family: InterMedium, sans-serif
+    font-size: 15px
+    line-height: 23px
+    letter-spacing: .55px
+    max-width: 355px
+
+  &__content
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: flex-start
+    flex-wrap: wrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    &__left-side
+      flex-basis: 42.25%
+      max-width: 42.25%
+      width: 100%
+      padding: 8.2rem 0 3rem 4.5rem
+    &__right-side
+      flex-basis: 57.75%
+      max-width: 57.75%
+      width: 100%
+      background-color: #F1F1F1
+      border-radius: 45px 0 0 45px;
+      padding: 7.85rem 3.15rem 6rem 5.25rem
+      .inline-group
+        display: flex
+        flex-direction: row
+        align-content: center
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 100%
+        max-width: 100%
+        flex-basis: 100%
+        margin-bottom: 21px
+        .input-group
+          flex-basis: calc(33.3% - 14px)
+          max-width: calc(33.3% - 14px)
+          width: 100%
+      .requires-info
+        color: #D12121
+        font-family: InterMedium, sans-serif
+        font-size: 12.7px
+        line-height: 15px
+        margin: 10px 0 18px
+        p
+          margin: 0
+      .btn_group
+        margin-top: 14px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 100%
+        max-width: 100%
+        flex-basis: 100%
+        button
+          flex-basis: auto
+          width: auto
+          padding: 18px 52px
+        .check-group
+          flex-basis: calc(100% - 192px)
+          max-width: calc(100% - 192px)
+          display: flex
+          flex-direction: row
+          align-items: flex-start
+          justify-content: flex-start
+          flex-wrap: nowrap
+          width: 100%
+          input
+            position: absolute
+            width: 1px
+            height: 1px
+            opacity: 0
+            &:checked+label:before
+              background-image: url(../images/sprites/sprite.svg#check_icon)
+              background-repeat: no-repeat
+              background-position: center
+              background-size: 12px
+          label
+            position: relative
+            cursor: pointer
+          label:before
+            content: ''
+            position: absolute
+            left: 0
+            display: block
+            width: 18px
+            flex-basis: 18px
+            min-width: 18px
+            height: 18px
+            border: 1px solid #c6c6c6
+            border-radius: 4px
+            background-color: #fff
+            cursor: pointer
+          .btn_txt
+            font-size: 11px
+            line-height: 13px
+            display: inline-block
+            padding-left: 28px
+            flex-basis: calc(100% - 20px)
+            max-width: calc(100% - 20px)
+            a
+              color: $accent-color
+              transition: color .3s
+              &:hover
+                text-decoration: none
+      input, textarea
+        font-size: 14px
+        line-height: 17px
+      textarea
+        min-height: 100px
+
+/* catalog */
+.catalog
+  border-bottom: 1px solid #EAEAEA
+  padding-bottom: 2.8rem
+  position: relative
+  overflow: hidden
+  &:before
+    content: ''
+    display: block
+    width: 100vw;
+    height: 58vw;
+    background-image: url(../images/svg/mgray_poly.svg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    position: absolute
+    left: -70%;
+    bottom: -51%;
+    opacity: .45
+  &:after
+    content: '';
+    display: block;
+    width: 95vw;
+    height: 52vw;
+    background-image: url(../images/svg/mblue_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 12%;
+    left: 8.5%;
+    opacity: .2;
+  .container
+    position: relative
+    z-index: 1
+  &__info
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: flex-start
+    flex-wrap: nowrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    &__descr
+      padding-left: 5.75%
+      margin-top: 1.5rem
+  &__content
+    margin-top: 5.65rem
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: flex-start
+    flex-wrap: wrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    &__item
+      flex-basis: calc(25% - 15px)
+      max-width: calc(25% - 15px)
+      width: 100%
+      margin-right: 20px
+      margin-bottom: 24px
+      position: relative
+      &:nth-of-type(4n)
+        margin-right: 0
+      .image-block
+        img
+          display: block
+          width: auto
+          max-width: 100%
+          margin: 0
+          overflow: hidden
+          border-radius: 30px 10px
+      .catalog-link
+        display: block
+        margin: 15px 0 0
+        span
+          font-family: InterBold, sans-serif
+          font-size: 18px
+          line-height: 22px
+          transition: color .3s
+          color: #262F40
+      &:hover
+        .catalog-link
+          span
+            color: $accent-color
+/* about */
+.about-page
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &:before
+    content: '';
+    display: block;
+    width: 131.5vw;
+    height: 58.5vw;
+    background-image: url(../images/svg/mgray_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: -11%;
+    opacity: .4;
+    top: -1%
+.about
+  position: relative
+  overflow: hidden
+  &:after
+    content: '';
+    display: block;
+    width: 67vw;
+    height: 36vw;
+    background-image: url(../images/svg/mblue_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: -24%;
+    opacity: .2;
+    bottom: -12%;
+  .container
+    position: relative
+    z-index: 1
+  &__content
+    margin-top: 2.6rem
+    p
+      margin-bottom: 24px
+    h2
+      margin: 38px 0 25px
+      color: $main-color
+      font-size: 36px
+      line-height: 44px
+      font-family: InterBold, sans-serif
+    .video-block
+      margin: 32px 0 4.2rem
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      flex-wrap: wrap
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+      &__video
+        position: relative
+        flex-basis: 52%
+        max-width: 52%
+        width: 100%
+        max-width: 609px
+        .video-link
+          display: block
+          position: relative
+          &:after
+            content: ''
+            display: block
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            background: linear-gradient(86.19deg, rgba(9, 73, 143, 0.61), rgba(56, 166, 201, 0.61) 88.1%)
+            border-radius: 20px
+            max-width: 609px
+          img
+            display: block
+            width: auto
+            max-width: 100%
+            margin: 0
+            border-radius: 20px
+          .video-btn
+            display: block
+            width: 124px
+            height: 124px
+            border-radius: 50%
+            position: absolute
+            right: -42px;
+            bottom: -31px;
+            background-color: #fff
+            box-shadow: (0px 13px 43px rgba(0, 0, 0, 0.16))
+            z-index: 1
+            background-image: url(../images/sprites/sprite.svg#play_icon)
+            background-repeat: no-repeat
+            background-position: calc(50% + 6px) 50%
+            background-size: 48px
+            transition: transform .3s
+            &:hover
+              transform: scale(1.1)
+      &__descr
+        flex-basis: 48%
+        max-width: 48%
+        width: 100%
+        padding-left: 7%
+        padding-top: 5.5rem
+        font-size: 14px
+        line-height: 21px
+        position: relative
+        &:before
+          content: ''
+          display: block
+          width: 43px
+          height: 5px
+          background: linear-gradient(85.29deg, #1568C4 -79.21%, #2DB3DE 115.85%), #00669C
+          position: absolute
+          left: 14.5%
+          top: 4rem
+        p
+          max-width: 350px
+          margin-bottom: 20px
+        ul
+          margin: 0 0 0 3.25rem
+          padding: 0
+          list-style-type: none
+          li
+            position: relative
+            margin-bottom: 16px
+            &:before
+              content: ''
+              display: block
+              width: 16px
+              height: 16px
+              background-color: #fff
+              position: absolute
+              left: -33px
+              top: 4px
+              border-radius: 50%
+              box-shadow: 0px 4.8px 8px rgba(0, 0, 0, 0.15)
+            &:after
+              content: ''
+              display: block
+              width: 6px
+              height: 6px
+              background-color: $accent-color
+              border-radius: 50%
+              position: absolute
+              left: -28px
+              top: 9px
+      &.full
+        margin: 2.9rem 0
+        .video-link
+          border-radius: 65px 10px 65px 10px
+          overflow: hidden
+          display: block
+          position: relative
+          &:after
+            content: ''
+            display: block
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            background: linear-gradient(86.19deg, rgba(9, 73, 143, 0.61), rgba(56, 166, 201, 0.61) 88.1%)
+          .video-btn
+            display: block
+            width: 124px
+            height: 124px
+            border-radius: 50%
+            position: absolute
+            right: calc(50% - 62px)
+            top: calc(50% - 62px)
+            background-color: #fff
+            box-shadow: (0px 13px 43px rgba(0, 0, 0, 0.16))
+            z-index: 1
+            background-image: url(../images/sprites/sprite.svg#play_icon)
+            background-repeat: no-repeat
+            background-position: calc(50% + 6px) 50%
+            background-size: 48px
+            transition: transform .3s
+            &:hover
+              transform: scale(1.1)
+            &:after
+              content: ''
+              display: block
+              width: 300px
+              height: 300px
+              border-radius: 50%
+              border: 1px solid #fff
+              opacity: .2
+              position: absolute
+              left: calc(-50% - 25px)
+              top: calc(-50% - 25px)
+      .video-descr
+        margin: 22px 0 25px
+        display: block
+        width: 100%
+        text-align: center
+        color: #97989A
+        font-size: 14px
+        line-height: 21px
+        font-style: italic
+
+/* contacts */
+.contacts
+  position: relative
+  overflow: hidden
+  &:before
+    content: '';
+    display: block;
+    width: 97.5vw;
+    height: 46.5vw;
+    background-image: url(../images/svg/mgray_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: -22%;
+    opacity: .4;
+    top: 16%;
+  &:after
+    content: '';
+    display: block;
+    width: 69vw;
+    height: 38vw;
+    background-image: url(../images/svg/mblue_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: -40%;
+    opacity: .2;
+    top: 0%;
+  .container
+    position: relative
+    z-index: 1
+  &__info
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: flex-start
+    flex-wrap: nowrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    &__descr
+      padding-left: 5.75%
+      margin-top: 1.5rem
+  &__content
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: flex-start
+    flex-wrap: wrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    margin-top: 4.5rem
+    &__item
+      border: 1px solid #D7D9DD
+      border-radius: 30px 10px
+      background-color: #fff
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+      padding: 1.45rem 3.5rem 1.7rem
+      max-width: calc(33.3% - 13px)
+      flex-basis: calc(33.3% - 13px)
+      margin-right: 20px
+      &:nth-of-type(3n)
+        margin-right: 0
+      .adress
+        position: relative
+        padding: 26px 0 20px 74px
+        font-size: 18px
+        line-height: 22px
+        font-family: InterMedium, sans-serif
+        color: #262F40
+        &:before
+          content: ''
+          display: block
+          width: 60px
+          height: 60px
+          background-image: url(../images/sprites/sprite.svg#cmark_icon)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: 60px;
+          position: absolute
+          left: 0
+          top: calc(50% - 28px)
+      .time
+        position: relative
+        padding: 26px 0 20px 78px
+        font-size: 18px
+        line-height: 22px
+        font-family: InterMedium, sans-serif
+        color: #262F40
+        &:before
+          content: ''
+          display: block
+          width: 54px
+          height: 54px
+          background-image: url(../images/sprites/sprite.svg#ctime_icon)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: 54px;
+          position: absolute
+          left: -5px
+          top: calc(50% - 25px)
+      .phones
+        position: relative
+        padding: 10px 0 10px 78px
+        font-size: 18px
+        line-height: 22px
+        font-family: InterMedium, sans-serif
+        color: #262F40
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-start
+        flex-wrap: wrap
+        width: 100%
+        flex-basis: 100%
+        a
+          color: #262F40
+          display: inline-block
+          margin-bottom: 5px
+        &:before
+          content: ''
+          display: block
+          width: 42px
+          height: 42px
+          background-image: url(../images/sprites/sprite.svg#cphone_icon)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: 42px 42px
+          position: absolute
+          left: 18px
+          top: calc(50% - 23px)
+      .mail
+        position: relative
+        padding: 10px 0 10px 78px
+        font-size: 18px
+        line-height: 22px
+        font-family: InterMedium, sans-serif
+        color: #262F40
+        display: block
+        width: 100%
+        a
+          color: #262F40
+        &:before
+          content: ''
+          display: block
+          width: 53px
+          height: 60px
+          background-image: url(../images/sprites/sprite.svg#cmail_icon)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: 60px 45px
+          position: absolute
+          left: 14px
+          top: calc(50% - 30px)
+    &__map
+      margin-top: 3.75rem
+      margin-bottom: 4.3rem
+      min-height: 411px
+      background-color: #aaa
+      width: 100%
+      border-radius: 20px
+      overflow: hidden
+      iframe
+        display: block
+        width: 100%
+        height: 100%
+
+/* info */
+.info
+  padding-bottom: 2rem
+  &__content
+    margin-top: 2.55rem
+    p
+      margin-bottom: 24px
+    h2
+      margin: 38px 0 25px
+      color: $main-color
+      font-size: 36px
+      line-height: 44px
+      font-family: InterBold, sans-serif
+    h3
+      margin: 38px 0 20px
+      color: $main-color
+      font-size: 30px
+      line-height: 36px
+      font-family: InterBold, sans-serif
+
+    ul
+      margin: 30px 0 0 32px
+      padding: 0
+      list-style-type: none
+      font-size: 14px
+      line-height: 21px
+      li
+        position: relative
+        margin-bottom: 25px
+        &:before
+          content: ''
+          display: block
+          width: 16px
+          height: 16px
+          background-color: #fff
+          position: absolute
+          left: -33px
+          top: 4px
+          border-radius: 50%
+          box-shadow: 0px 4.8px 8px rgba(0, 0, 0, 0.15)
+        &:after
+          content: ''
+          display: block
+          width: 6px
+          height: 6px
+          background-color: $accent-color
+          border-radius: 50%
+          position: absolute
+          left: -28px
+          top: 9px
+      ul
+        margin: -12px 0 0 4.35rem
+        padding: 0
+        list-style-type: none
+        font-size: 14px
+        line-height: 21px
+        li
+          margin-bottom: 10px
+          &:before
+            display: none
+          &:after
+            content: ''
+            display: block
+            width: 4px
+            height: 4px
+            background-color: $accent-color
+            border-radius: 50%
+            position: absolute
+            left: -8px
+            top: 9px
+  .preview-block
+    margin-top: 33px
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: flex-start
+    flex-wrap: wrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    &__item
+      flex-basis: calc(25% - 16px)
+      max-width: calc(25% - 16px)
+      margin-right: 21px
+      img
+        border-radius: 30px 10px
+      &:nth-of-type(4n)
+        margin-right: 0
+  .slider-block
+    margin-top: 6.55rem
+    .slide-item
+      .slide-image
+        border-radius: 60px 10px
+    .owl-dots
+      margin: 32px 0
+    .owl-nav
+      left: -22px
+      top: calc(50% - 28px)
+      width: calc(100% + 44px)
+      max-width: calc(100% + 44px)
+      flex-basis: calc(100% + 44px)
+      button
+        width: 48px
+        height: 48px
+      span
+        background-color: #fff
+        width: 48px
+        height: 48px
+        border-radius: 50%
+        box-shadow: 0px 13px 43px rgba(0, 0, 0, 0.16)
+        background-image: url(../images/sprites/sprite.svg#sarrow_icon)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 20px
+        display: block
+      .info-btn-prev
+        transform: scale(-1,1)
+  .image-block
+    margin: 40px 0 33px
+    img
+      border-radius: 60px 10px
+    .image-descr
+      margin: 22px 0 25px
+      display: block
+      width: 100%
+      text-align: center
+      color: #97989A
+      font-size: 14px
+      line-height: 21px
+      font-style: italic
+
+/* polit */
+.politics
+  padding-bottom: 5rem
+  border-bottom: 1px solid #EAEAEA
+  position: relative
+  overflow: hidden
+  &:before
+    content: '';
+    display: block;
+    width: 158.5vw;
+    height: 70.5vw;
+    background-image: url(../images/svg/mgray_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: -100%;
+    opacity: .3;
+    top: 1.5%;
+  &:after
+    content: '';
+    display: block;
+    width: 110vw;
+    height: 61vw;
+    background-image: url(../images/svg/mblue_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: -38%;
+    opacity: .2;
+    top: -11%;
+  .container
+    position: relative
+    z-index: 1
+  &__title
+    color: $main-color
+    font-family: InterBold, sans-serif
+    font-size: 52px
+    line-height: 84px
+  &__content
+    margin-top: 1.5rem
+    h3
+      text-transform: uppercase
+      font-size: 16px
+      line-height: 24px
+    p
+      margin-bottom: 2px
+/* product */
+.product
+  position: relative
+  overflow: hidden
+  &:before
+    content: '';
+    display: block;
+    width: 97vw;
+    height: 43.5vw;
+    background-image: url(../images/svg/mgray_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: -12%;
+    opacity: .3;
+    top: 13.5%;
+  &:after
+    content: '';
+    display: block;
+    width: 69vw;
+    height: 38vw;
+    background-image: url(../images/svg/mblue_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: -29%;
+    opacity: .2;
+    top: -6%;
+  .container
+    position: relative
+    z-index: 1
+  .code
+    color: $accent-color
+    font-size: 36px
+    line-height: 44px
+    font-family: InterBold, sans-serif
+    display: inline-block
+    margin: 26px 0
+  .product-slider
+    margin: 3rem 0 2.35rem
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: flex-start
+    flex-wrap: nowrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    .main-slider
+      flex-basis: 57.6%
+      max-width: 57.6%
+      margin-right: 20px
+      width: 100%
+      .slide-item
+        border-radius: 60px 10px
+        overflow: hidden
+    .thumb-slider
+      flex-basis: calc(42.4% - 20px)
+      max-width: calc(42.4% - 20px)
+      .slick-list
+        max-height: calc(100% - 20px)
+      span
+        background-color: #fff
+        width: 48px
+        height: 48px
+        border-radius: 50%
+        box-shadow: 0px 13px 43px rgba(0, 0, 0, 0.16)
+        background-image: url(../images/sprites/sprite.svg#sarrow_icon)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 20px
+        display: block
+      .slide-item
+        margin-bottom: 20px
+
+  p
+    margin-bottom: 24px
+  .price-block
+    margin-top: 2.65rem
+    position: relative
+    padding: 1.5rem 0 1.75rem 0
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: flex-start
+    flex-wrap: wrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    &:before
+      content: ''
+      display: block
+      width: 200vw
+      height: 1px
+      background-color: #EDE9E9
+      left: -50vw
+      top: 0
+      position: absolute
+    &:after
+      content: ''
+      display: block
+      width: 200vw
+      height: 1px
+      background-color: #EDE9E9
+      left: -50vw
+      bottom: 0
+      position: absolute
+    &__value
+      padding: 12px 0
+      color: $main-color
+      font-size: 61px
+      line-height: 74px
+      font-family: InterBold, sans-serif
+      span
+        display: inline-block
+        margin-left: 15px
+      p
+        margin: 0
+    &__backcall
+      margin-left: 2.25rem
+      position: relative
+      padding-left: 2.45rem
+      p
+        color: #67686A
+        font-size: 17px
+        line-height: 26px
+        font-family: InterSemiBold, sans-serif
+        display: block
+        width: 100%
+        letter-spacing: .25px
+        margin-bottom: 0
+      .product-btn
+        margin: 12px 0 0 -5px
+        padding: 18px 26px
+      &:before
+        content: ''
+        display: block
+        width: 6px
+        height: 100%
+        background: linear-gradient(356.6deg, #1568C4 56.59%, #2DB3DE 108.63%), #C4C4C4
+        position: absolute
+        left: 0
+        top: 0
+
+.interest
+  margin: 4.4rem 0 3.85rem
+  &__title
+    color: $main-color
+    font-size: 36px
+    line-height: 44px
+    font-family: InterBold, sans-serif
+  &__content
+    margin-top: 3.15rem
+    .interest-slider
+      .slide-item
+        border-radius: 30px 10px 30px 10px
+        overflow: hidden
+        position: relative
+        .image-block
+          img
+            display: block
+            width: auto
+            max-width: 100%
+            margin: 0
+        .descr-block
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          justify-content: flex-end
+          flex-wrap: wrap
+          color: #fff
+          padding: 20px 30px
+          background: radial-gradient(330% 330% at 85% -20%, rgba(0, 0, 0, 0) 15%, rgba(10, 10, 10, 0.69) 60%)
+          .product-title
+            font-family: InterBold, sans-serif
+            font-size: 18px
+            line-height: 22px
+            display: inline-block
+            width: 100%
+            margin-bottom: 5px
+          .product-code
+            font-size: 14px
+            line-height: 17px
+            display: inline-block
+            margin-bottom: 15px
+          .more-link
+            display: inline-block
+            text-decoration: underline
+            font-family: InterMedium, sans-serif
+            font-size: 15px
+            line-height: 20px
+            color: #6AD0F0
+            letter-spacing: -0.3px
+            position: relative
+            &:after
+              content: ''
+              display: block
+              width: 48px
+              height: 12px
+              position: absolute
+              left: calc(100% + 15px)
+              bottom: 4px
+              background-image: url(../images/sprites/sprite.svg#iarrow_icon)
+              background-repeat: no-repeat
+              background-position: center
+              background-size: cover
+              transition: transform .3s
+            &:hover
+              text-decoration: none
+              &:after
+                transform: translateX(10px)
+
+      .owl-dots
+        margin: 3rem 0 0
+      .owl-nav
+        left: -22px
+        top: calc(50% - 38px)
+        width: calc(100% + 44px)
+        max-width: calc(100% + 44px)
+        flex-basis: calc(100% + 44px)
+        button
+          width: 48px
+          height: 48px
+        span
+          background-color: #fff
+          width: 48px
+          height: 48px
+          border-radius: 50%
+          box-shadow: 0px 13px 43px rgba(0, 0, 0, 0.16)
+          background-image: url(../images/sprites/sprite.svg#sarrow_icon)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: 20px
+          display: block
+        .info-btn-prev
+          transform: scale(-1,1)
+
+/* section */
+.section
+  &__title
+    white-space: nowrap
+  &__info
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: flex-start
+    flex-wrap: nowrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    &__descr
+      padding-left: 5.75%
+      margin-top: 1.5rem
+      font-size: 14px
+      line-height: 21px
+  &__content
+    margin-top: 4rem
+    &__item
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      justify-content: flex-start
+      flex-wrap: wrap
+      width: 100%
+      max-height: 100%
+      flex-basis: 100%
+      border: 1px solid #D7D9DD
+      border-radius: 60px 10px
+      padding: 10px 32px 8px
+      margin-bottom: 30px
+      .image-block
+        flex-basis: 200px
+        max-width: 200px
+        width: 100%
+        img
+          display: block
+          margin: 0
+          width: auto
+          max-width: 100%
+      .descr-block
+        flex-basis: calc(100% - 200px)
+        max-width: calc(100% - 200px)
+        padding: 15px 0 20px 6.25%
+        .product-name
+          color: $main-color
+          font-family: InterBold, sans-serif
+          font-size: 29px
+          line-height: 35px
+          display: block
+          width: 100%
+        .product-code
+          color: $accent-color
+          font-size: 23px
+          line-height: 28px
+          display: block
+          width: 100%
+          margin: 10px 0 15px
+        .product-info
+          display: flex
+          flex-direction: row
+          align-items: center
+          justify-content: flex-start
+          flex-wrap: wrap
+          width: 100%
+          max-width: 100%
+          flex-basis: 100%
+          .txt-block
+            flex-basis: calc(100% - 215px)
+            max-width: calc(100% - 215px)
+            font-size: 14px
+            line-height: 21px
+            padding-right: 5%
+          .more-link
+            display: inline-block
+            flex-basis: 190px
+            min-width: 190px
+            width: 100%
+            max-width: 190px
+            margin-right: 15px
+            padding: 18px 20px
+    &__btns
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+      margin: 3.75rem 0 4.5rem
+
+/* services */
+.services
+  border-bottom: 1px solid #EAEAEA
+  overflow: hidden
+  position: relative
+  &:before
+    content: '';
+    display: block;
+    width: 97vw;
+    height: 43.5vw;
+    background-image: url(../images/svg/mgray_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: -22%;
+    opacity: .3;
+    top: 8.5%;
+  &:after
+    content: '';
+    display: block;
+    width: 69vw;
+    height: 38vw;
+    background-image: url(../images/svg/mblue_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: -29%;
+    opacity: .2;
+    top: -6%;
+  .container
+    position: relative
+    z-index: 1
+  &__info
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: flex-start
+    flex-wrap: nowrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    &__descr
+      padding-left: 5.75%
+      margin-top: 1.5rem
+      font-size: 14px
+      line-height: 21px
+  &__content
+    margin-top: 4.5rem
+    &__item
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      justify-content: flex-start
+      flex-wrap: wrap
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+      border: 1px solid #D7D9DD
+      background-color: #fff
+      border-radius: 60px 10px
+      overflow: hidden
+      margin-bottom: 30px
+      .image-block
+        flex-basis: 304px
+        max-width: 304px
+        width: 100%
+        min-width: 304px
+        border-radius: 60px 0 60px 10px
+        overflow: hidden
+      .descr-block
+        flex-basis: calc(100% - 304px)
+        max-width: calc(100% - 304px)
+        padding: 40px 3.5%
+        .product-title
+          display: block
+          color: $main-color
+          font-family: InterBold, sans-serif
+          font-size: 29px
+          line-height: 35px
+        .product-info
+          display: flex
+          flex-direction: row
+          align-items: center
+          justify-content: flex-start
+          flex-wrap: wrap
+          width: 100%
+          max-width: 100%
+          flex-basis: 100%
+          margin-top: 2.25rem
+          .txt-block
+            flex-basis: calc(100% - 215px)
+            max-width: calc(100% - 215px)
+            font-size: 14px
+            line-height: 21px
+            padding-right: 5%
+          .more-link
+            display: inline-block
+            flex-basis: 190px
+            min-width: 190px
+            width: 100%
+            max-width: 190px
+            margin-left: auto
+            margin-right: 15px
+            padding: 18px 20px
+    &__btns
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+      margin: 3.75rem 0 4.5rem
+
+/* news */
+.news
+  border-bottom: 1px solid #EAEAEA
+  padding-bottom: 1.5rem
+  position: relative
+  overflow: hidden
+  & > *
+    position: relative
+    z-index: 1
+  &:before
+    content: '';
+    display: block;
+    width: 135vw;
+    height: 60.5vw;
+    background-image: url(../images/svg/mgray_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: -90%;
+    opacity: .3;
+    top: 37.5%;
+  &:after
+    content: '';
+    display: block;
+    width: 95vw;
+    height: 52vw;
+    background-image: url(../images/svg/mblue_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: -6%;
+    opacity: .2;
+    top: 9.5%;
+  &__content
+    margin-top: 1rem
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: flex-start
+    flex-wrap: wrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    &__item
+      display: flex
+      flex-direction: row
+      align-items: stretch
+      justify-content: flex-start
+      flex-wrap: wrap
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+      position: relative
+      margin-bottom: 1.75rem
+      &:last-child
+        margin-bottom: 0
+      &:after
+        content: ''
+        display: block
+        width: 100%
+        height: calc(100% - 2.5rem)
+        bottom: 0
+        left: 0
+        position: absolute
+        border-radius: 10px
+        background-color: #f5f5f5
+      .descr-block
+        flex-basis: auto
+        max-width: calc(100% - 403px)
+        width: 100%
+        position: relative
+        z-index: 1
+        padding: 4.5rem 3.25rem 32px
+        .news-link
+          font-family: InterBold, sans-serif
+          color: $main-color
+          font-size: 29px
+          line-height: 35px
+          margin-bottom: 15px
+          display: inline-block
+        .txt-info
+          color: #67686A
+          font-size: 14px
+          line-height: 21px
+          margin-bottom: 20px
+        .date
+          display: block
+          width: 100%
+          text-align: left
+          color: #4F4F4F
+          font-size: 16px
+          line-height: 21px
+      .image-block
+        position: relative
+        z-index: 1
+        flex-basis: 403px
+        max-width: 403px
+        min-width: 403px
+        width: 100%
+        margin-bottom: 21px
+        img
+          border-radius: 50px 5px
+
+/* article */
+.article
+  padding-top: 1.4rem
+  padding-bottom: 5rem
+  position: relative
+  overflow: hidden
+  & > *
+    position: relative
+    z-index: 1
+  &:before
+    content: '';
+    display: block;
+    width: 135vw;
+    height: 60.5vw;
+    background-image: url(../images/svg/mgray_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: -90%;
+    opacity: .3;
+    top: 5.5%;
+  &:after
+    content: '';
+    display: block;
+    width: 94vw;
+    height: 52vw;
+    background-image: url(../images/svg/mblue_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: -6%;
+    opacity: .2;
+    top: -5.75%;
+  &__title
+    font-family: InterBold, sans-serif
+    font-size: 46px
+    line-height: 55px
+    color: $main-color
+  &__content
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: flex-start
+    flex-wrap: wrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    margin-top: 2.55rem
+    &__left-side
+      flex-basis: calc(68% - 18px)
+      max-width: calc(68% - 18px)
+      width: 100%
+      .article-info
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 100%
+        max-width: 100%
+        flex-basis: 100%
+        color: #868686
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 2rem
+        &__time
+          p
+            margin: 0
+          a
+            display: inline-block
+            background-color: $blue-color
+            color: #fff
+            border-radius: 30px
+            padding: 8px 22px
+            text-align: center
+            margin-left: 33px
+            transition: background-color .3s
+            &:hover
+              background-color: $accent-color
+      p
+        margin-bottom: 15px
+      .image-block
+        margin: 30px 0 20px
+        img
+          border-radius: 20px
+          overflow: hidden
+          width: auto
+          max-width: 100%
+          margin: 0
+        p
+          color: #4F4F4F
+          font-size: 14px
+          line-height: 21px
+          margin: 18px 0 0
+      h2
+        color: $main-color
+        font-size: 29px
+        line-height: 35px
+        font-family: InterBold, sans-serif
+        margin-bottom: 15px
+      ul,ol
+        margin: 15px 0 30px
+        padding: 0
+        list-style-type: none
+        li
+          position: relative
+          padding-left: 20px
+          font-size: 16px
+          line-height: 24px
+          margin-bottom: 5px
+          &:before
+            content: ''
+            display: block
+            width: 8px
+            height: 8px
+            border-radius: 50%
+            border: 2px solid $accent-color
+            position: absolute
+            left: 1px
+            top: 8px
+      ol
+        counter-reset: li
+        li
+          padding-left: 20px
+          counter-increment: li
+          &:before
+            content: counter(li)'.'
+            color: $accent-color
+            border: none
+            width: auto
+            height: 24px
+            top: 0
+            font-family: InterBold, sans-serif
+
+      h3
+        color: $main-color
+        font-family: InterBold, sans-serif
+        font-size: 23px
+        line-height: 28px
+        margin-bottom: 15px
+      .recomm-block
+        display: flex
+        flex-direction: row
+        align-items: stretch
+        justify-content: flex-start
+        flex-wrap: wrap
+        width: 100%
+        max-width: 100%
+        flex-basis: 100%
+        position: relative
+        margin: 2.5rem 0 1.75rem
+        padding: 3.5rem 3.25rem 20px 3.25rem
+        &:before
+          content: ''
+          display: block
+          width: 100%
+          height: 92%
+          position: absolute
+          left: 0
+          bottom: 0
+          background-color: #F5F5F5
+          border-radius: 10px
+        & > *
+          position: relative
+          z-index: 1
+        &__info
+          flex-basis: 50%
+          max-width: 50%
+          width: 100%
+          h2
+            color: #000
+            font-family: InterBold, sans-serif
+            font-size: 25px
+            line-height: 30px
+          a
+            color: #4F4F4F
+            font-size: 16px
+            line-height: 21px
+            text-decoration: none
+            display: inline-block
+            transition: color .3s
+            &:hover
+              color: $accent-color
+          span
+            display: block
+            width: 100%
+            color: #4F4F4F
+            font-size: 16px
+            line-height: 21px
+            margin-top: 22px
+
+        &__image
+          flex-basis: 50%
+          max-width: 50%
+          margin: -4.75rem 0 0 -10px
+          a
+            display: block
+          img
+            border-radius: 50px 10px
+            overflow: hidden
+    &__right-side
+      flex-basis: 32%
+      max-width: 32%
+      width: 100%
+      padding-left: 2px
+      margin-left: 18px
+      .content-list
+        margin-top: 3.8rem
+        &__title
+          font-family: InterBold, sans-serif
+          font-size: 25px
+          line-height: 30px
+        ul
+          margin: 15px 0 0
+          padding: 0
+          list-style-type: none
+          li
+            position: relative
+            padding-left: 23px
+            margin-bottom: 8px
+            span
+              color: #595959
+              font-family: InterBold, sans-serif
+              display: inline-block
+            p
+              color: #595959
+              font-size: 16px
+              line-height: 24px
+              margin: 8px 0
+            &:before
+              content: ''
+              display: block
+              width: 8px
+              height: 8px
+              border-radius: 50%
+              border: 2px solid $accent-color
+              position: absolute
+              left: 2px
+              top: 8px
+            &:nth-of-type(1)
+              span
+                font-family: InterBold, sans-serif
+                font-size: 16px
+                line-height: 24px
+                font-weight: bold
+                letter-spacing: .3px
+              &:before
+                background-color: $accent-color
+/* search */
+.search
+  border-bottom: 1px solid #EAEAEA
+  min-height: 280px
+  overflow: hidden
+  position: relative
+  &:before
+    content: '';
+    display: block;
+    width: 97vw;
+    height: 45vw;
+    background-image: url(../images/svg/mgray_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: -22%;
+    opacity: .3;
+    top: 11.5%;
+  &:after
+    content: '';
+    display: block;
+    width: 69vw;
+    height: 38vw;
+    background-image: url(../images/svg/mblue_poly.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: -29%;
+    opacity: .2;
+    top: -6%;
+  .container
+    position: relative
+    z-index: 1
+  &__title
+    font-family: InterBold, sans-serif
+    color: $main-color
+    font-size: 52px
+    line-height: 82px
+  .search-form
+    margin: 22px 0
+    form
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: flex-start
+      flex-wrap: nowrap
+      width: auto
+      flex-basis: auto
+      background-color: #fff
+      border-radius: 50px
+      overflow: hidden
+      border: 1px solid #B2B4B7
+      max-width: 716px
+      padding: 0 20px
+      .search-input
+        border: none
+        flex-basis: auto
+        width: 90%
+        padding: 8px 0px
+      .search-btn
+        flex-basis: 40px
+        width: 40px
+        min-width: 40px
+        height: 40px
+        margin-left: auto
+        margin-right: 0
+        background-color: transparent
+        border: none
+        background-image: url(../images/sprites/sprite.svg#search_icon)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 12px
+  .search-result
+    color: #67686A
+    margin: 32px 0
+    letter-spacing: -.45px
+  .search-title
+    color: $main-color
+    font-family: InterBold, sans-serif
+    font-size: 36px
+    line-height: 44px
+    margin-bottom: 2rem
+  &__products
+    margin: 2.5rem 0
+    &__item
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      justify-content: flex-start
+      flex-wrap: wrap
+      width: 100%
+      max-height: 100%
+      flex-basis: 100%
+      border: 1px solid #D7D9DD
+      background-color: #fff
+      border-radius: 60px 10px
+      padding: 10px 32px 8px
+      margin-bottom: 30px
+      .image-block
+        flex-basis: 200px
+        max-width: 200px
+        width: 100%
+        img
+          display: block
+          margin: 0
+          width: auto
+          max-width: 100%
+      .descr-block
+        flex-basis: calc(100% - 200px)
+        max-width: calc(100% - 200px)
+        padding: 15px 0 20px 6.25%
+        .product-name
+          color: $main-color
+          font-family: InterBold, sans-serif
+          font-size: 29px
+          line-height: 35px
+          display: block
+          width: 100%
+        .product-code
+          color: $accent-color
+          font-size: 23px
+          line-height: 28px
+          display: block
+          width: 100%
+          margin: 10px 0 15px
+        .product-info
+          display: flex
+          flex-direction: row
+          align-items: center
+          justify-content: flex-start
+          flex-wrap: wrap
+          width: 100%
+          max-width: 100%
+          flex-basis: 100%
+          .txt-block
+            flex-basis: calc(100% - 215px)
+            max-width: calc(100% - 215px)
+            font-size: 14px
+            line-height: 21px
+            padding-right: 5%
+          .more-link
+            display: inline-block
+            flex-basis: 190px
+            min-width: 190px
+            width: 100%
+            max-width: 190px
+            margin-right: 15px
+            padding: 18px 20px
+    &__btns
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+      margin: 3.75rem 0 4.5rem
+  &__services
+    margin: 2.5rem 0
+    &__item
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      justify-content: flex-start
+      flex-wrap: wrap
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+      border: 1px solid #D7D9DD
+      background-color: #fff
+      border-radius: 60px 10px
+      overflow: hidden
+      margin-bottom: 30px
+      .image-block
+        flex-basis: 304px
+        max-width: 304px
+        width: 100%
+        min-width: 304px
+        border-radius: 60px 0 60px 10px
+        overflow: hidden
+      .descr-block
+        flex-basis: calc(100% - 304px)
+        max-width: calc(100% - 304px)
+        padding: 40px 3.5%
+        .product-title
+          display: block
+          color: $main-color
+          font-family: InterBold, sans-serif
+          font-size: 29px
+          line-height: 35px
+        .product-info
+          display: flex
+          flex-direction: row
+          align-items: center
+          justify-content: flex-start
+          flex-wrap: wrap
+          width: 100%
+          max-width: 100%
+          flex-basis: 100%
+          margin-top: 2.25rem
+          .txt-block
+            flex-basis: calc(100% - 215px)
+            max-width: calc(100% - 215px)
+            font-size: 14px
+            line-height: 21px
+            padding-right: 5%
+          .more-link
+            display: inline-block
+            flex-basis: 190px
+            min-width: 190px
+            width: 100%
+            max-width: 190px
+            margin-left: auto
+            margin-right: 15px
+            padding: 18px 20px
+    &__btns
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+      margin: 3.75rem 0 4.5rem
+
+/* 404 */
+.error-page
+  background-image: url(../images/404_image.jpg)
+  background-repeat: no-repeat
+  background-position: top right
+  background-size: 40%
+  height: 100vh
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  &__content
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    flex-wrap: wrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    margin-top: -25vh
+  &__header
+    flex-basis: 100%
+    max-width: 100%
+    width: 100%
+  &__title
+    flex-basis: auto
+    width: auto
+    font-family: InterBold, sans-serif
+    font-size: 197px
+    line-height: 239px
+    background: linear-gradient(85.29deg, #1568C4 -79.21%, #2DB3DE 115.85%), linear-gradient(0deg, #00669C, #00669C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  &__descr
+    margin-top: 10rem
+    padding-left: 30px
+    h2
+      font-family: InterMedium, sans-serif
+      font-size: 44px
+      line-height: 53px
+      color: $main-color
+      font-weight: normal
+    p
+      font-size: 34px
+      line-height: 41px
+      color: $main-color
+      margin: 10px 0
+      a
+        color: $accent-color
+        transition: color .3s
+        &:hover
+          color: $blue-color
+/* simple */
+.simple-page
+  border-bottom: 1px solid #EAEAEA
+  padding-bottom: 3rem
+  &__content
+    margin-top: 1.5rem
+    p
+      margin-bottom: 24px
+    h2,h3,h4
+      margin: 15px 0
+      color: $main-color
+      font-size: 36px
+      line-height: 44px
+      font-family: InterBold, sans-serif
+    h3
+      font-size: 28px
+      line-height: 35px
+    h4
+      font-size: 22px
+      line-height: 28px
+    ul
+      margin: 0 0 0 3.25rem
+      padding: 0
+      list-style-type: none
+      li
+        position: relative
+        margin-bottom: 16px
+        &:before
+          content: ''
+          display: block
+          width: 16px
+          height: 16px
+          background-color: #fff
+          position: absolute
+          left: -33px
+          top: 4px
+          border-radius: 50%
+          box-shadow: 0px 4.8px 8px rgba(0, 0, 0, 0.15)
+        &:after
+          content: ''
+          display: block
+          width: 6px
+          height: 6px
+          background-color: $accent-color
+          border-radius: 50%
+          position: absolute
+          left: -28px
+          top: 9px
+
+
+.footer
+  padding: 2.55rem 0 0
+  .container
+    position: relative
+  &__content
+    display: flex
+    flex-direction: row
+    align-items: stretch
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    max-width: 100%
+    flex-basis: 100%
+    padding-bottom: 8px
+    &__logo
+      flex-basis: 150px
+      min-width: 150px
+      width: 100%
+      max-width: 150px
+      position: relative
+      top: -8px
+      left: -10px
+    &__info
+      flex-basis: auto
+      width: auto
+      max-width: 460px
+      margin-right: auto
+      margin-left: 2.55%
+      p
+        font-size: 14px
+        line-height: 23px
+        letter-spacing: 0.035em
+        &.company-name
+          color: $blue-color
+          font-family: InterSemiBold, sans-serif
+          font-size: 18px
+          line-height: 21px
+          letter-spacing: 0.02em
+          display: inline-block
+          margin-bottom: 10px
+      .phone-link
+        padding-left: 35px
+        position: relative
+        display: inline-block
+        margin: 25px 30% 0 0
+        color: #181818
+        transition: color .3s
+        font-size: 18px
+        line-height: 18px
+        font-family: InterSemiBold, sans-serif
+        letter-spacing: 0.035em
+        &:hover
+          color: $accent-color
+        &:before
+          content: ''
+          display: block
+          width: 14px
+          height: 14px
+          position: absolute
+          left: 8px
+          top: calc(50% - 7px)
+          background-image: url(../images/sprites/sprite.svg#fphone_icon)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: contain
+      .mail-link
+        padding-left: 35px
+        position: relative
+        display: inline-block
+        margin: 17px 30% 25px 0
+        color: #181818
+        transition: color .3s
+        font-size: 18px
+        line-height: 18px
+        font-family: InterSemiBold, sans-serif
+        letter-spacing: 0.035em
+        &:hover
+          color: $accent-color
+        &:before
+          content: ''
+          display: block
+          width: 22px;
+          height: 16px;
+          position: absolute
+          left: 3px
+          top: calc(50% - 7px)
+          background-image: url(../images/sprites/sprite.svg#fmail_icon)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: contain
+    &__menu
+      padding: 2px 0
+      margin: 0 auto 0 0
+      .fmenu-list
+        &__item
+          display: block
+          margin-bottom: 25px
+          &.active
+            .fmenu-list__link
+              color: #181818
+        &__link
+          display: inline-block
+          color: #848484
+          transition: color .3s
+          font-size: 18px
+          line-height: 22px
+          &:hover
+            color: #181818
+    &__btn
+      .footer-btn
+        padding: 18px 25px
+
+  .copyright
+    background-color: #2C2C2C
+    color: #7E7E7E
+    padding: 20px 0
+    &__content
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      flex-wrap: wrap
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+      font-size: 14px
+      line-height: 16px
+      .politics-link
+        display: inline-block
+        color: #7E7E7E
+      .texterra
+        color: #7E7E7E
+        img
+          display: inline-block
+          margin-left: 10px
+          margin-bottom: -2px
+@import "_parts/_plugins"                                              // plugins styles
+@import "_parts/_modal"                                                // modal styles
+@import "_parts/_media"                                                // media

@@ -1,0 +1,1 @@
+{ %image% | phpthumbon:"w=346&h=188&zc=1&q=90"}

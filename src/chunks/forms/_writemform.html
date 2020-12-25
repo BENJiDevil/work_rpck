@@ -1,0 +1,18 @@
+<form id="writemform" action="javascript:void(null);" onsubmit="send_form('writemform')">
+    <div class="inline-group">
+        <div class="input-group">
+            <input type="text" name="name_f" placeholder="Введите ваше имя" class="name-input"/>
+        </div>
+        <div class="input-group">
+            <input type="text" name="phone_f" placeholder="Телефон" class="phone-input required"/>
+        </div>
+    </div>
+    <div class="requires-info" style="display: none;"><p>Для продолжения требуется Ваше согласие на обработку Ваших персональных данных</p></div>
+    <div class="input-group btn_group">
+        <div class="check-group">
+            <input id="checkdata" type="checkbox" name="check" checked>
+            <label for="checkdata" class="btn_txt">Даю согласие на обработку моих персональных данных. Ознакомиться с <a href="#" target="_blank">политикой</a>. Ознакомиться с Соглашением об использовании <a href="#" target="_blank">Сайта</a>.</label>
+        </div>
+        <button type="submit" class="btn-style">Заказать звонок</button>
+    </div>
+</form>

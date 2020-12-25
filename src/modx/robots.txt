@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /manager/
+Disallow: /assets/components/
+Disallow: /core/
+Disallow: /connectors/
+Disallow: /index.php
+Disallow: *?
+
+Host: vash_sait.ru (или www.vash_sait.ru)
+Sitemap: http://путь к вашей карте XML формата

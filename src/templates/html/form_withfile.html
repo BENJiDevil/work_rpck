@@ -1,0 +1,20 @@
+<form id="file_form" role="form" action="javascript:void(null);" onsubmit="send_withfile('file_form')">
+    <input type="hidden" name="nameForm" value="Форма 'Someform'" class="d-none"/>
+    <div class="input-group">
+        <input id="name_file1" type="text" name="nameFF" placeholder="Ваше имя" class="form-control name_input input_style"/>
+    </div>
+    <div class="input-group">
+        <input id="phone_file1" type="text" name="contactFF" placeholder="Ваш телефон" class="form-control input_style"/>
+    </div>
+    <div class="input-group">
+        <textarea id="message_file1" name="messageFF" row="5" placeholder="Комментарий"></textarea>
+    </div>
+    <div class="input-group file-group">
+        <svg id="fileic" class="icon icon-s-file" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 96 96" style="enable-background:new 0 0 96 96;" xml:space="preserve"><g><path d="M48,34.1H29.4v-4.6H48V34.1z M29.4,48h32.5v-4.6H29.4V48z M29.4,57.3h32.5v-4.6H29.4V57.3z M29.4,66.6h32.5v-4.6H29.4V66.6z M75.9,31.8v44.1c0,2.6-2.1,4.6-4.6,4.6H24.8c-2.6,0-4.6-2.1-4.6-4.6V20.1c0-2.6,2.1-4.6,4.6-4.6 h34.8L75.9,31.8z M71.2,34.1L57.3,20.1H24.8v55.7h46.4V34.1z"/></g></svg>
+        <p id="fileic_file" class="link_file">Прикрепить файл</p>
+        <input id="fileic_file_input" name="fileFF[]" multiple="multiple" type="file" value="Прикрепить файл"/>
+    </div>
+    <div class="input-group">
+        <button id="btn_file1" type="submit" class="style_btn">Button</button>
+    </div>
+</form>

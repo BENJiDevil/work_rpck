@@ -1,0 +1,24 @@
+{
+  "name": "templatefm",
+  "description": "new template 2020",
+  "main": "gulpfile.js",
+  "authors": [
+    "BENJi"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/BENJiDevil/",
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "jquery.maskedinput": "^1.4.1",
+    "magnific-popup": "^1.1.0",
+    "owl.carousel": "^2.3.4",
+    "wow": "^1.1.2",
+    "jquery.form-styler": "^2.0.2",
+    "jparallax": "^2.0.3",
+    "lazysizes": "^5.2.0",
+    "typed.js": "^2.0.11",
+    "slick-carousel": "^1.8.1",
+    "ion-rangeslider": "ion.rangeSlider#^2.3.1",
+    "cocoen": "^2.0.5"
+  }
+}

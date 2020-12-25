@@ -1,0 +1,77 @@
+/* before after settings */
+$drag_color: blue
+$drag_width: 3px
+$btn_size: 42px
+$btn_bg: blue
+$btn_color: #fff
+
+
+/* for btn icon — use font awesome */
+
+.cocoen
+  box-sizing: border-box
+  cursor: pointer
+  line-height: 0
+  margin: 0
+  overflow: hidden
+  padding: 0
+  position: relative
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  *, ::after, ::before
+    box-sizing: inherit
+  img, picture > img
+    max-width: none
+  & >
+    img, picture > img
+      display: block
+      width: 100%
+
+    div:first-child
+      height: 100%
+      left: 0
+      overflow: hidden
+      position: absolute
+      top: 0
+      width: 50%
+
+picture .cocoen > div
+  height: 100%
+  left: 0
+  overflow: hidden
+  position: absolute
+  top: 0
+  width: 50%
+
+.cocoen-drag
+  background: $drag_color
+  bottom: 0
+  cursor: ew-resize
+  left: 50%
+  margin-left: -1px
+  position: absolute
+  top: 0
+  width: $drag_width
+  .arrow
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    background-color: $btn_bg
+    height: $btn_size
+    width: $btn_size
+    border-radius: 50%
+    overflow: hidden
+    left: 50%
+    margin-left: calc(#{$btn_size} / -2)
+    margin-top: calc(#{$btn_size} / -2)
+    position: absolute
+    top: 50%
+    svg
+      fill: $btn_color
+      height: auto
+      width: calc(#{$btn_size} - 8px)
+      position: relative

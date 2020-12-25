@@ -1,0 +1,24 @@
+<form id="write_form" action="javascript:void(null);" onsubmit="send_form('write_form')">
+    <div class="inline-group">
+        <div class="input-group">
+            <input type="text" name="name_f" placeholder="Введите ваше имя" class="name-input"/>
+        </div>
+        <div class="input-group">
+            <input type="text" name="phone_f" placeholder="Телефон" class="phone-input required"/>
+        </div>
+        <div class="input-group">
+            <input type="email" name="mail_f" placeholder="E-mail" class="mail-input required"/>
+        </div>
+    </div>
+    <div class="input-group">
+        <textarea name="message_f" id="backcall_message" placeholder="Ваше сообщение"></textarea>
+    </div>
+    <div class="requires-info" style="display: none;"><p>Для продолжения требуется Ваше согласие на обработку Ваших персональных данных</p></div>
+    <div class="input-group btn_group">
+        <div class="check-group">
+            <input id="checkdata" type="checkbox" name="check" checked>
+            <label for="checkdata" class="btn_txt">Даю согласие на обработку моих персональных данных. Ознакомиться с <a href="#" target="_blank">политикой</a>. Ознакомиться с Соглашением об использовании <a href="#" target="_blank">Сайта</a>.</label>
+        </div>
+        <button type="submit" class="btn-style">Отправить</button>
+    </div>
+</form>

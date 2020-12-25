@@ -1,0 +1,159 @@
+@import "_mixins/styles-mixin"                              // mixins
+@import "_parts/settings"                                   // settings
+@import "_parts/reset"
+@import "_fonts/fonts"
+// @import "_plugins/parallax"                              // parallax (need include first)
+@import "_parts/_header"
+.main
+  &:before
+    content: ''
+    display: block
+    width: 100vw
+    height: 1px
+    background-color: #E3E3E3
+    position: absolute
+    top: 199px
+    left: 0
+
+  &:after
+    content: ''
+    display: block
+    width: 100vw
+    height: 1px
+    background-color: #E3E3E3
+    position: absolute
+    top: 117px
+    left: 0
+  .header
+    position: relative
+    z-index: 2
+    &__search
+      border-color: transparent
+  .main-slider
+    padding: 30vh 0
+    margin: -30vh 0
+    overflow-x: hidden
+
+    .owl-stage-outer
+      overflow: visible
+    .slide
+      background: linear-gradient(180deg, #F9F9F9 76.25%, rgba(249, 249, 249, 0) 102.87%)
+      &:before
+        content: ''
+        display: block
+        width: 45vw;
+        height: 20vw;
+        background-image: url(../images/svg/mgray_poly.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        position: absolute
+        top: 25%
+        left: 43%
+        max-width: 1000px;
+        max-height: 430px;
+      &:after
+        content: '';
+        display: block;
+        width: 31vw;
+        height: 17vw;
+        background-image: url(../images/svg/mblue_poly.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 6.5%;
+        right: -9%;
+      .container
+        position: relative
+        z-index: 1
+    .slide-item
+      display: flex
+      flex-direction: row
+      align-items: stretch
+      justify-content: flex-start
+      flex-wrap: wrap
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+      .slide-content
+        flex-basis: 60%
+        max-width: 60%
+        width: 100%
+        padding: 3.7rem 0 8.3rem
+        .main-title
+          font-size: 66px
+          line-height: 80px
+          font-family: InterBold, sans-serif
+          color: $main-color
+          span
+            color: $accent-color
+        .main-subtitle
+          font-weight: normal
+          font-size: 24px
+          line-height: 37px
+          color: $main-color
+          display: inline-block
+          margin-top: 1.5rem
+          letter-spacing: .45px
+        .btns-row
+          display: flex
+          flex-direction: row
+          align-items: center
+          justify-content: flex-start
+          flex-wrap: nowrap
+          width: auto
+          flex-basis: auto
+          max-width: 100%
+          margin-top: 2rem
+          .more-info
+            display: inline-block
+            text-transform: uppercase
+            color: #fff
+            text-align: center
+            display: inline-block
+            font-family: InterMedium, sans-serif
+            font-size: 14px
+            line-height: 14px
+            background: linear-gradient(85.29deg, #1568C4 -79.21%, #2DB3DE 115.85%), #00669C
+            border-radius: 10px
+            padding: 18px 51px
+            &:hover
+              background: linear-gradient(85.29deg, #2DB3DE -79.21%, #1568C4 115.85%), #00669C
+          .slider-btns
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            flex-wrap: nowrap
+            width: auto
+            flex-basis: auto
+            max-width: 110px
+            margin-left: 2.55rem
+            .slide-btn
+              background-color: #fff
+              border: 2px solid #D7D9DD
+              border-radius: 10px
+              margin: 0 5px
+              width: 50px
+              min-width: 50px
+              height: 50px
+              display: block
+              background-repeat: no-repeat
+              background-position: center
+              background-size: 20px 24px
+              background-image: url(../images/sprites/sprite.svg#marrow_icon)
+              &.next-btn
+                transform: scale(-1,1)
+      .slide-preview
+        flex-basis: 40%
+        max-width: 40%
+        width: 100%
+        position: relative
+        z-index: 12
+        .slide-image
+          width: 45vw
+          max-width: 864px
+          position: absolute
+          bottom: -16.5%
+          left: -11.5%

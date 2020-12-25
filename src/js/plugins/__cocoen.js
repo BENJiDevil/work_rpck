@@ -1,0 +1,4 @@
+document.querySelectorAll('.cocoen').forEach(function(element){
+    new Cocoen(element);
+    $('.cocoen-drag').prepend('<span class="arrow"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><g><rect x="240" y="64" width="32" height="384"/><polygon points="149.472,131.968 7.696,256 149.472,380.032 170.528,355.968 56.304,256 170.528,156.032"/><polygon points="362.528,131.968 341.472,156.032 455.696,256 341.472,355.968 362.528,380.032 504.304,256"/></g></g></g></svg></span>')
+});

@@ -1,0 +1,48 @@
+*
+  box-sizing: border-box
+  outline: none !important
+  &::before, &::after
+    box-sizing: border-box
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd
+  margin: 0
+body
+  position: relative
+  overflow-x: hidden
+  min-width: 320px
+  font-family: $default-font
+  font-size: $fz-default
+  line-height: $lh-default
+  color: $txt_color
+  background-color: $bg_color
+  min-height: 100vh
+  scroll-behavior: smooth
+  text-rendering: optimizeSpeed
+  &::-webkit-scrollbar
+    width: $scrl-bar_width
+  &::-webkit-scrollbar-track
+    background: $scrl-bar_track
+  &::-webkit-scrollbar-thumb
+    background: $scrl-bar_thumb
+  &::-webkit-scrollbar-thumb:hover
+    background: $scrl-bar_thumbh
+
+.container
+  width: 100%
+  padding: 0 15px
+  margin: 0 auto
+  max-width: $container-width
+ul[class], ol[class]
+  padding: 0
+  list-style-type: none
+button, label
+  cursor: pointer
+a:not([class])
+  text-decoration-skip-ink: auto
+a[class]
+  text-decoration: none
+input, button, textarea, select
+  font: inherit
+img
+  display: block
+  width: auto
+  max-width: 100%

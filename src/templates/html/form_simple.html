@@ -1,0 +1,19 @@
+<form id="backcall_form" action="javascript:void(null);" onsubmit="send_form('backcall_form')">
+    <input type="hidden" name="nameForm" value="Форма Обратный звонок" class="d-none"/>
+    <div class="input-group">
+        <label for="backcall_name">Ваше имя</label>
+        <input id="backcall_name" type="text" name="name_f" placeholder="Укажите свое имя" class="form-control name-input"/>
+    </div>
+    <div class="input-group">
+        <label for="backcall_phone">Введите свой номер телефона</label>
+        <input id="backcall_phone" type="text" name="phone_f" placeholder="+7 (___) ___ __ __" class="form-control phone-input required"/>
+    </div>
+    <div class="input-group">
+        <label for="backcall_message"></label>
+        <textarea name="message_f" id="backcall_message" placeholder="Оставьте сообщение"></textarea>
+    </div>
+    <div class="input-group btn_group">
+        <button id="backcall_btn" type="submit" class="modal_btn btn-style-red">Жду звонка</button>
+        <p class="btn_txt"> Нажимая на кнопку, вы соглашаетесь на обработку <a href="doc/doc.pdf" target="_blank">персональных данных</a></p>
+    </div>
+</form>
